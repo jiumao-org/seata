@@ -1,10 +1,7 @@
-# java
-#
-# VERSION       Java 8
 
 # use the centos base image provided by dotCloud
 FROM centos
-MAINTAINER Marco Palladino, marco@mashape.com
+MAINTAINER Bevis Pei, ppf@jiumao.org
 
 ENV JAVA_VERSION 8u31
 ENV BUILD_VERSION b13
