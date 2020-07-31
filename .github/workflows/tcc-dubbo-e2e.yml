@@ -40,7 +40,7 @@ jobs:
         git clone -b feature/it https://github.com/q294881866/seata-samples.git seata-samples
         cd seata-samples
         mvn clean package -pl seata-samples-jit --also-make install
-        mvn clean package -pl tcc/dubbo-tcc-sample -amd
+        mvn clean package -pl tcc/dubbo-tcc-sample --also-make
     - name: test
       run: |
        cd /tmp/seata-samples
