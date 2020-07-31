@@ -44,7 +44,7 @@ jobs:
     - name: test
       run: |
        cd /tmp/seata-samples
-       nohup java -cp .:jit/target/lib/*:jit/target/seata-jit-server.jar io.seata.samples.jit.Main &
+       nohup java -cp .:seata-samples-jit/target/lib/*:seata-samples-jit/target/seata-jit-server.jar io.seata.samples.jit.Main &
        sleep 1m
        nohup java -cp .:tcc/dubbo-tcc-sample/target/lib/*:tcc/dubbo-tcc-sample/target/dubbo-tcc-sample.jar io.seata.samples.tcc.dubbo.starter.TccProviderStarter &
        sleep 1m
